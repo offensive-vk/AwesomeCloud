@@ -22,15 +22,15 @@ There are various types of cloud services:
 
 A cloud service provider rents out the combination of technology, infrastructure, and expertise to other companies and individuals for the purpose of cloud computing, including online storage, compute, and networking over the Internet. Some examples includes:
 
-1. Amazon Web Services (AWS) – Infrastructure-as-a-Service (IaaS)
+1. [Amazon Web Services](https://aws.amazon.com/) (AWS) – Infrastructure-as-a-Service (IaaS)
 
-2. Microsoft Azure – Hybrid cloud and enterprise cloud services.
+2. [Microsoft Azure](https://azure.microsoft.com/en-us) – Hybrid cloud and enterprise cloud services.
 
-3. Google Cloud Platform – AI, ML, and Kubernetes.
+3. [Google Cloud Platform](https://cloud.google.com/) – AI, ML, and Kubernetes.
 
-4. Alibaba — Largest cloud service provider in Asia.
+4. [Alibaba](https://www.alibabacloud.com/) — Largest cloud service provider in Asia.
 
-5. IBM Cloud – Multi-cloud CSP
+5. [IBM Cloud](https://www.ibm.com/cloud) – Multi-cloud CSP - cloud service providers
 
 ## Quick Links and Navigation
 
