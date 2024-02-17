@@ -6,7 +6,7 @@
 
 # Want to help us make this template better? Share your feedback here: https://forms.gle/ybq9Krt8jtBL3iCk7
 
-ARG NODE_VERSION=20.9.0
+ARG NODE_VERSION=20
 
 ################################################################################
 # Use node image for base image for all stages.
@@ -69,4 +69,4 @@ COPY --from=build /usr/src/app/dist ./dist
 EXPOSE 5173
 
 # Run the application.
-CMD ["npm", "run", "dev"]
+CMD npm run dev
