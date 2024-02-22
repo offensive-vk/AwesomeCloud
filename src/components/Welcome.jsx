@@ -1,6 +1,6 @@
 
 function Welcome() {
-    const Stuff = ["Cloud", "Cloud Computing", "Cloud Services", "Cloud Providers", "Virtualization", "IoT"];
+    const Stuff = ["What is Cloud", "Cloud Computing", "Cloud Architecture", "Cloud Providers", "Virtualization", "IoT"];
 
     return (
         <section 
