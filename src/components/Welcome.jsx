@@ -1,11 +1,11 @@
 
 function Welcome() {
-    const Stuff = ["Cloud", "Cloud Computing", "Cloud Services", "Cloud Providers", "Virtualization", "IoT"];
+    const Stuff = ["What is Cloud", "Cloud Computing", "Cloud Architecture", "Cloud Providers", "Virtualization", "IoT"];
 
     return (
         <section 
             id='welcome' 
-            className="container flex flex-col items-center justify-center w-full h-screen bg-slate-300 text-black"
+            className="container flex flex-col items-center justify-center w-full h-screen text-slate-300 bg-black"
         >
             <div 
                 id="heading" 
@@ -28,8 +28,8 @@ function Welcome() {
                     return (
                     <li 
                         key={index} 
-                        className="list-item cursor-pointer font-mono hover:bg-blue-700 hover:text-white border  rounded border-solid border-blue-600 p-2 m-2"
-                        onClick={() => console.log(`Website is in Development.`)}
+                        className="list-item cursor-pointer hover:bg-blue-700 hover:text-white border  rounded border-solid border-blue-600 p-2 m-2"
+                        onClick={() => alert(`Coming Soon`)}
                     >
                         {item}
                     </li> );

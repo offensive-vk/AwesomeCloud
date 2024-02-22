@@ -34,4 +34,19 @@ Step 7 : Configure Docker Engine and GUI using Docker Desktop and Set Limits upo
 **Congratulations ! You've Successfully Installed Docker in your system to understand the power of Containers.**
 
 ## **What is a Container** ?
+
+A container is a lightweight, standalone, executable software package that includes everything needed to run a piece of software, including the code, runtime, system tools, system libraries, and settings. Containers are isolated from each other and from the underlying host system, allowing applications to run consistently across different environments.
+
+Containers leverage operating system-level virtualization to provide a consistent runtime environment regardless of the host system's configuration. Docker, a popular containerization platform, uses container images as the basis for creating and running containers. These images contain a snapshot of a container's filesystem, including the application code and all its dependencies.
+
+Containers offer several benefits, including portability, scalability, and efficiency. They allow developers to package applications with all their dependencies and run them in a consistent environment, whether it's on a developer's laptop, in a test environment, or in production. Containers also enable organizations to deploy and manage applications more efficiently, by abstracting away the underlying infrastructure and providing a lightweight, portable runtime environment.
+
 ## **What is a Image** ?
+
+In Docker, an image is a lightweight, standalone, and executable software package that includes everything needed to run a piece of software. It serves as the basis for creating containers. An image contains the application code, runtime, system tools, libraries, and settings required for the application to run in a containerized environment.
+
+Docker images are typically built using a Dockerfile, which is a text file that contains instructions for building the image. These instructions specify the base image, dependencies, environment variables, and other configuration settings needed for the application.
+
+Images are stored in a registry, such as Docker Hub, which is a centralized repository for sharing and distributing Docker images. Developers can pull existing images from a registry to use as a base for their own images or push their custom images to a registry for others to use.
+
+Images are immutable, meaning they cannot be changed once they are created. However, they can be layered on top of each other using a technique called layering. Each instruction in a Dockerfile adds a new layer to the image, allowing for efficient reuse of common components across multiple images.
