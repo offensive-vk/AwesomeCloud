@@ -28,7 +28,7 @@ function Welcome() {
                     return (
                     <li 
                         key={index} 
-                        className="list-item cursor-pointer font-mono hover:bg-blue-700 hover:text-white border  rounded border-solid border-blue-600 p-2 m-2"
+                        className="list-item cursor-pointer  hover:bg-blue-700 hover:text-white border  rounded border-solid border-blue-600 p-2 m-2"
                         onClick={() => console.log(`Website is in Development.`)}
                     >
                         {item}
