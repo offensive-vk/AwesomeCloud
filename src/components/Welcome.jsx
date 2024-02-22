@@ -5,7 +5,7 @@ function Welcome() {
     return (
         <section 
             id='welcome' 
-            className="container flex flex-col items-center justify-center w-full h-screen bg-slate-300 text-black"
+            className="container flex flex-col items-center justify-center w-full h-screen text-slate-300 bg-black"
         >
             <div 
                 id="heading" 
@@ -28,8 +28,8 @@ function Welcome() {
                     return (
                     <li 
                         key={index} 
-                        className="list-item cursor-pointer  hover:bg-blue-700 hover:text-white border  rounded border-solid border-blue-600 p-2 m-2"
-                        onClick={() => console.log(`Website is in Development.`)}
+                        className="list-item cursor-pointer hover:bg-blue-700 hover:text-white border  rounded border-solid border-blue-600 p-2 m-2"
+                        onClick={() => alert(`Coming Soon`)}
                     >
                         {item}
                     </li> );
