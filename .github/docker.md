@@ -15,6 +15,7 @@ Docker is a tool that is used to automate the deployment of applications in ligh
 - Official Website - <https://docker.com/>
 
 ## How to Use and Install ?
+
 Step 0 : Connect Your System to Good Network and Reliable bandwidth and ping.
 
 Step 1 : Open Your Favorite Web Browser and Download DockerDesktop Setup from <https://www.docker.com/products/docker-desktop/>
@@ -50,3 +51,65 @@ Docker images are typically built using a Dockerfile, which is a text file that 
 Images are stored in a registry, such as Docker Hub, which is a centralized repository for sharing and distributing Docker images. Developers can pull existing images from a registry to use as a base for their own images or push their custom images to a registry for others to use.
 
 Images are immutable, meaning they cannot be changed once they are created. However, they can be layered on top of each other using a technique called layering. Each instruction in a Dockerfile adds a new layer to the image, allowing for efficient reuse of common components across multiple images.
+
+## Docker Commands - Docker CLI
+
+*`my-nginx`* is the name of container
+
+### Starting and Stopping Containers
+
+`$ docker start my-nginx` - **Starting**
+
+`$ docker stop my-nginx` - Stopping
+
+`$ docker restart my-nginx` - Restarting
+
+`$ docker pause my-nginx` - Pausing
+
+`$ docker unpause my-nginx` - Unpausing
+
+`$ docker wait my-nginx` - Blocking a Container
+
+`$ docker kill my-nginx` - Sending a SIGKILL
+
+`$ docker attach my-nginx` - Connecting to an Existing Container
+
+## Retrieving Information
+
+*`my-nginx`* is the name of container
+
+`$ docker ps` - List running containers
+
+`$ docker ps -a` - List all containers
+
+`$ docker logs my-nginx`  - Container Logs
+
+`$ docker inspect my-nginx`  - Inspecting Containers
+
+`$ docker events my-nginx`  - Containers Events
+
+`$ docker port my-nginx`  - Public Ports
+
+`$ docker top my-nginx`  - Running Processes
+
+`$ docker stats my-nginx`  - Container Resource Usage
+
+`$ docker diff my-nginx` - Lists the changes made to a container.
+
+## Danger Commands
+
+- Cleans up dangling images, containers, volumes, and networks (ie, not associated with a container) -
+`$ docker system prune`
+
+- Additionally, remove any stopped containers and all unused images (not just dangling images) -
+`$ docker system prune -a`
+
+- Stop all running containers - `$ docker stop $(docker ps -a -q)`
+
+- Delete stopped containers - `$ docker container prune`
+
+- Remove all dangling (not tagged and is not associated with a container) images - `$ docker image prune`
+
+- Remove all images which are not used by existing containers - `$ docker image prune -a`
+
+- Remove all volumes not used by at least one container - `$ docker volume prune`
