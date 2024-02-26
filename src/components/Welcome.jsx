@@ -4,7 +4,7 @@ function Welcome() {
     return (
         <section 
             id='welcome' 
-            className="container flex flex-col items-center justify-center w-full h-screen text-slate-300 bg-black"
+            className="container flex flex-col items-center justify-center w-full h-screen text-slate-300 bg-black xs:w-auto sm:w-auto lg:w-full"
         >
             <div 
                 id="heading" 
@@ -22,13 +22,13 @@ function Welcome() {
                 id="stuff" 
                 className="font-light text-1xl text-blue-500"
             >
-                <ul className="flex">
+                <ul className="flex xs:flex-col sm:flex-col md:flex-row">
                 {Stuff.map((item, index) => {
                     return (
                     <li 
                         key={index} 
                         className="list-item cursor-pointer hover:bg-blue-700 hover:text-white border rounded border-solid border-blue-600 p-2 m-2"
-                        onClick={() => alert(`Coming Soon`)}
+                        onClick={() => alert(`Coming Soon!`)}
                     >
                         {item}
                     </li> );
