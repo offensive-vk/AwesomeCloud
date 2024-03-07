@@ -11,14 +11,14 @@ function Cloud() {
     return (
         <section className="cloud container flex flex-col items-center justify-center w-full h-screen bg-white text-black">
             <section className="content m-3 flex flex-col items-center">
-                <section className="heading font-bold text-5xl text-center mt-3 mb-3 underline line-clamp-0 cursor-help">
+                <section className="heading font-bold text-5xl text-center mt-3 mb-3  line-clamp-0 cursor-help">
                     What is Cloud ?
                 </section>
                 <section className="content text-1xl p-3">
                     The cloud is an extensive network of remote servers around the world. These servers store and manage data, run applications, and deliver content and services like streaming videos, web mail, and office productivity software over the internet.
                     In simple terms, the cloud refers to the Internet, where data and services are stored and accessed remotely instead of on your personal computer or local network.
                 </section>
-                <section className="heading font-bold text-5xl text-center mt-3 mb-3 underline line-clamp-0 cursor-help">
+                <section className="heading font-bold text-5xl text-center mt-3 mb-3 line-clamp-0 cursor-help">
                     Cloud vs Cloud Computing? 
                 </section>
                 <section className="content text-1xl p-3">
