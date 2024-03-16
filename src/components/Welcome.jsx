@@ -22,7 +22,7 @@ function Welcome() {
                 id="stuff" 
                 className="font-light text-1xl text-blue-500"
             >
-                <ul className="flex xs:flex-col sm:flex-col md:flex-row">
+                <ul className="flex sm:flex-col md:flex-col lg:flex-row">
                 {Stuff.map((item, index) => {
                     return (
                     <li 
