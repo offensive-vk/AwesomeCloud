@@ -18,7 +18,7 @@
 
 <div align="center">
 <a href="https://docker.com/">
-<img src="https://cdn.jsdelivr.net/gh/offensive-vk/Icons@master/docker/docker-original-wordmark.svg" height=500 width=400 alt="docker" />
+<img src="https://cdn.jsdelivr.net/gh/offensive-vk/Icons@master/docker/docker-original-wordmark.svg" height=400 width=400 alt="docker" />
 </a>
 </div>
 
@@ -264,3 +264,14 @@ Use These Commands at your own risk.
 - Learn to Shape, not to adapt.
 
 > Thank you, specially for reading this last message at the end of this file.
+
+***
+
+<p align="center">
+  <i>&copy; <a href="https://github.com/offensive-vk/">Vedansh </a> 2023 - Present</i><br>
+  <i>Licensed under <a href="https://github.com/offensive-vk/AwesomeCloud#CC0-1.0-1-ov-file">CC0-1.0</a></i><br>
+  <a href="https://github.com/npm-run-test"><img src="https://i.ibb.co/4KtpYxb/octocat-clean-mini.png" /></a><br>
+  <kbd>Thanks for visiting :)</kbd>
+</p>
+
+***
