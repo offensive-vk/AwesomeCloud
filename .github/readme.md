@@ -38,14 +38,14 @@ For Any Information About Contribution and Documentation of This Repository.
 
 ### Please Refer to
 
-- [Documentation 📖](https://github.com/offensive-vk/AwesomeCloud/blob/master/.github/readme.md)
+- [Documentation 📖](https://github.com/offensive-vk/AwesomeCloud/blob/master/.github/readme.md) *(Current File)*
 - [Contribution Guidelines ✨](https://github.com/offensive-vk/AwesomeCloud/blob/master/.github/contributing.md)
 - [Security Guidelines ⚠️](https://github.com/offensive-vk/AwesomeCloud/blob/master/.github/security.md)
 - [Code of Conduct 🙌](https://github.com/offensive-vk/AwesomeCloud/blob/master/.github/code_of_conduct.md)
 - [Developer & Author 🧑‍💻](https://github.com/offensive-vk/)
-- [Licensing 🔑](https://github.com/offensive-vk/AwesomeCloud/blob/master/license)
+- [Licensing 🔑](https://github.com/offensive-vk/AwesomeCloud/blob/master/LICENSE)
 
-## Thinking About [Docker](https://github.com/offensive-vk/AwesomeCloud/blob/master/.github/docker.md) ?
+## Thinking About [Docker](https://github.com/offensive-vk/AwesomeCloud/blob/master/.github/Docker.md) ?
 
 ## Thinking About This Repository? [AwesomeCloud](https://awesomecloud.pages.dev/) ?
 
@@ -59,5 +59,3 @@ For Any Information About Contribution and Documentation of This Repository.
   <a href="https://github.com/npm-run-test"><img src="https://i.ibb.co/4KtpYxb/octocat-clean-mini.png" /></a><br>
   <kbd>Thanks for visiting :)</kbd>
 </p>
-
-***
