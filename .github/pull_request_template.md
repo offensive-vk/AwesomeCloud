@@ -15,7 +15,7 @@ What kind of change does this PR introduce?
 ## Pull Author and Reviewers.
 
 * [ ] Self
-* [ ] Others
+* [ ] Others (Mention)
 
 `[@username](github account address)`
 
