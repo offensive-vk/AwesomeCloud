@@ -1,0 +1,29 @@
+name: Node.js CI - Alpine
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  test_alpine:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x, 18.x, 20.x, 21.x]
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Use Node.js ${{ matrix.node-version }} on Alpine
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        distribution: 'alpine'
+        cache: 'npm'
+
+    - run: npm ci
+    - run: npm run build

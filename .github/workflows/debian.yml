@@ -1,0 +1,29 @@
+name: Node.js CI - Debian
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  test_debian:
+
+    runs-on: debian-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x, 18.x, 20.x, 21.x]
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Use Node.js ${{ matrix.node-version }} on Debian
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        # distribution: 'debian'
+        cache: 'npm'
+
+    - run: npm ci
+    - run: npm test
