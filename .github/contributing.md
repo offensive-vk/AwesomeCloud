@@ -17,5 +17,5 @@ For Information about Concepts and Languages that are available to contribute, p
 - Your Pull Request will be reviewed and merged accordingly.
 - Anyone can also Assign me as reviewer of your pr for this repository.
 - Code review is required on every new PR, minimum 1 or more reviewers should be assigned.
-- Author : [offensive-vk](https://github.com/offensive-vk/)
+- Maintainer & Developer : [offensive-vk](https://github.com/offensive-vk/)
 - Keep Contributing to Open Source and Thank you
