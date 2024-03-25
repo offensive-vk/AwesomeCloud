@@ -47,11 +47,9 @@ For Any Information About Contribution and Documentation of This Repository.
 
 ## Thinking About [Docker](https://github.com/offensive-vk/AwesomeCloud/blob/master/.github/Docker.md) ?
 
-## Thinking About This Repository? [AwesomeCloud](https://awesomecloud.pages.dev/) ?
+## Thinking About This [Repository?](https://awesomecloud.pages.dev/)
 
-## Heard About [Cloudflare](https://cloudflare.com/)?, *You Must Know*
-
-***
+## Deployed with the Help of [Cloudflare](https://cloudflare.com/), *You Must Know*
 
 <p align="center">
   <i>&copy; <a href="https://github.com/offensive-vk/">Vedansh </a> 2023 - Present</i><br>
