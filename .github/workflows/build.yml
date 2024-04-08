@@ -22,6 +22,6 @@ jobs:
 
     - name: Install dependencies and run npm script
       run: |
-        npm install
+        npm ci
         npm run build
         echo Build Successful.
