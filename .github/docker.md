@@ -273,5 +273,3 @@ Use These Commands at your own risk.
   <a href="https://github.com/npm-run-test"><img src="https://i.ibb.co/4KtpYxb/octocat-clean-mini.png" /></a><br>
   <kbd>Thanks for visiting :)</kbd>
 </p>
-
-***
