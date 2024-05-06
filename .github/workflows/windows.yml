@@ -1,4 +1,4 @@
-name: Node.js CI - Windows
+name: CI / Node.js - Windows
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     strategy:
       matrix:
