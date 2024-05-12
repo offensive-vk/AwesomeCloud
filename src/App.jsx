@@ -4,6 +4,7 @@ import Welcome from './components/Welcome';
 import Cloud from './components/Cloud';
 import Computing from './components/Computing';
 import Architecture from './components/Architecture';
+import Providers from './components/Providers';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
     <Cloud />
     <Computing />
     <Architecture />
+    <Providers />
     </>
   )
 }
