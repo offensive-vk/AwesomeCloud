@@ -15,7 +15,7 @@ function Computing() {
     return (
         <DarkSection>
             <section className="heading font-bold text-5xl mt-1 mb-2 line-clamp-0 cursor-help">
-                    What is Cloud Computing?
+                What is Cloud Computing?
             </section>
             <section className="content text-1xl p-3 m-3">
                 {Hero}
@@ -26,13 +26,13 @@ function Computing() {
             <ul className="m-1 flex xs:flex-col sm:flex-col md:flex-row">
                 {Chars.map((item, index) => {
                     return (
-                    <li 
-                        key={index} 
-                        className="list-item cursor-pointer hover:bg-pink-700 hover:text-white border rounded border-solid border-pink-600 p-2 m-2"
-                        onClick={() => this}
-                    >
-                        {item}
-                    </li> );
+                        <li
+                            key={index}
+                            className="list-item cursor-pointer hover:bg-pink-700 hover:text-white border rounded border-solid border-pink-600 p-2 m-2"
+                            onClick={() => this}
+                        >
+                            {item}
+                        </li>);
                 })}
             </ul>
             <section className='text-2xl italic font-bold mt-2'>

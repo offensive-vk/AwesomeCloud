@@ -49,6 +49,36 @@ function Virtualization() {
                 </li> );
             })}
         </ul>
+        <div className="links flex flex-wrap justify-center mt-3 mb-3">
+            <a
+                className="ease-in-out duration-300 border-solid border rounded-xl bg-black text-white p-3 m-2 sm:m-4 hover:text-black hover:bg-white"
+                target="_blank"
+                href="https://www.vmware.com/"
+            >
+                {Examples[0]}
+            </a>
+            <a
+                className="ease-in-out duration-300 border-solid border rounded-xl bg-black text-white p-3 m-2 sm:m-4 hover:text-black hover:bg-white"
+                target="_blank"
+                href="https://www.virtualbox.org/"
+            >
+                {Examples[1]}
+            </a>
+            <a
+                className="ease-in-out duration-300 border-solid border rounded-xl bg-black text-white p-3 m-2 sm:m-4 hover:text-black hover:bg-white"
+                target="_blank"
+                href="https://www.qemu.org/"
+            >
+                {Examples[2]}
+            </a>
+            <a
+                className="ease-in-out duration-300 border-solid border rounded-xl bg-black text-white p-3 m-2 sm:m-4 hover:text-black hover:bg-white"
+                target="_blank"
+                href="https://www.proxmox.com/en/"
+            >
+                {Examples[3]}
+            </a>
+        </div>
         </section>
     </LightSection>
     )

@@ -28,7 +28,7 @@ function Welcome() {
                     <li 
                         key={index} 
                         className="list-item cursor-pointer hover:bg-blue-700 hover:text-white border rounded border-solid border-blue-600 p-2 m-2"
-                        onClick={() => alert(`Coming Soon!`)}
+                        onClick={() => alert(`Scroll Down to find what you're looking for.`)}
                     >
                         {item}
                     </li> );
