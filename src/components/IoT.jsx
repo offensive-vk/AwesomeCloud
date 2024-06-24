@@ -1,7 +1,7 @@
 function IoT() {
     return (
         <section className="iot">
-            
+
         </section>
     )
 }

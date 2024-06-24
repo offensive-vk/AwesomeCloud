@@ -19,31 +19,31 @@ function Cloud() {
                     In simple terms, the cloud refers to the Internet, where data and services are stored and accessed remotely instead of on your personal computer or local network.
                 </section>
                 <section className="heading font-bold text-5xl text-center mt-3 mb-3 line-clamp-0 cursor-help">
-                    Cloud vs Cloud Computing? 
+                    Cloud vs Cloud Computing?
                 </section>
                 <section className="content text-1xl p-3">
 
-                {CloudDiff}
-                <br />
-                {ComputingDiff}
+                    {CloudDiff}
+                    <br />
+                    {ComputingDiff}
 
                 </section>
                 <section className="links flex mt-3 mb-3">
-                    <a 
+                    <a
                         className="ease-in-out duration-300 border-solid border rounded-xl bg-black text-white p-3 m-4 hover:text-black hover:bg-white"
                         target="_blank"
                         href="https://www.cloudflare.com/learning/cloud/what-is-the-cloud/"
                     >
                         What is Cloud - Cloudflare
                     </a>
-                    <a 
+                    <a
                         className="ease-in-out duration-300 border-solid border rounded-xl bg-black text-white p-3 m-4 hover:text-black hover:bg-white"
                         target="_blank"
                         href="https://www.forbes.com/sites/bernardmarr/2023/10/09/the-10-biggest-cloud-computing-trends-in-2024-everyone-must-be-ready-for-now/"
                     >
                         Cloud Computing Trends - Forbes
                     </a>
-                    <a 
+                    <a
                         className="ease-in-out duration-300 border-solid border rounded-xl bg-black text-white p-3 m-4 hover:text-black hover:bg-white"
                         target="_blank"
                         href="https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-cloud-computing"
