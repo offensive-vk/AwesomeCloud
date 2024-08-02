@@ -17,8 +17,6 @@ What kind of change does this PR introduce?
 * [ ] Self
 * [ ] Others (Mention)
 
-`[@username](github account address)`
-
 ## What's new?
 -
 
