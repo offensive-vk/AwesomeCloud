@@ -2,12 +2,13 @@ name: Auto Assign to Project
 
 on:
   issues:
-    types: [opened, labeled]
+    types: [opened, labeled, closed]
   pull_request:
-    types: [opened, labeled]
+    types: [opened, labeled, synchronize]
   issue_comment:
     types: [created]
   workflow_dispatch:
+
 jobs:
   assign_to_project:
     runs-on: ubuntu-latest
