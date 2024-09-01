@@ -14,7 +14,7 @@ on:
       - opened
       - synchronize
       - closed
-
+  workflow_dispatch:
 jobs:
   add-to-project:
     name: Add To Project
