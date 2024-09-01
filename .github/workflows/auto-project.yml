@@ -1,0 +1,27 @@
+name: Auto Assign to Project
+
+on:
+  issues:
+    types: [opened, labeled]
+  pull_request:
+    types: [opened, labeled]
+  issue_comment:
+    types: [created]
+  workflow_dispatch:
+jobs:
+  assign_to_project:
+    runs-on: ubuntu-latest
+    name: Assign to One Project
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+    - name: Assign Issues and PR
+      uses: srggrs/assign-one-project-github-action@1.2.1
+      if: github.event.action == 'opened'
+      with:
+        project: 'https://github.com/users/offensive-vk/projects/6'
+    - name: Assign Labeled Bugs.
+      uses: srggrs/assign-one-project-github-action@1.2.1
+      with:
+        project: 'https://github.com/users/offensive-vk/projects/6'
+        column_name: 'In Progress'
