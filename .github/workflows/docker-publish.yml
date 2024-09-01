@@ -2,16 +2,17 @@ name: CD / Docker - Publish Image
 
 on:
   schedule:
-    - cron: '0 12 * * 0'
+    - cron: '10 0 * * 0'
   push:
     branches: [ "master" ]
+  workflow_dispatch:
 
 env:
   REGISTRY: docker.io
-  IMAGE_NAME: ntsystems/awesomecloud
+  IMAGE_NAME: ${{ secrets.DOCKER_USER }}/${{ secrets.DOCKER_TOKEN }}
 
 jobs:
-  publish:
+  docker:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -20,7 +21,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Install cosign
         if: github.event_name != 'pull_request'
@@ -36,7 +37,7 @@ jobs:
         uses: docker/login-action@343f7c4344506bcbf9b4de18042ae17996df046d # v3.0.0
         with:
           registry: ${{ env.REGISTRY }}
-          username: ntsystems
+          username: ${{ secrets.DOCKER_USER }}
           password: ${{ secrets.DOCKER_TOKEN }}
 
       - name: Extract Docker metadata
@@ -45,7 +46,7 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
 
-      - name: Build and push Docker image
+      - name: Build and Push Docker image
         id: build-and-push
         uses: docker/build-push-action@0565240e2d4ab88bba5387d719585280857ece09 # v5.0.0
         with:
@@ -55,7 +56,6 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
-          platform: linux/amd64,windows/amd64,linux/arm64
 
       - name: Sign the published Docker image
         if: ${{ github.event_name != 'pull_request' }}
