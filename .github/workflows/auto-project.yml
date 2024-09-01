@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Assign to One Project
     env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
     steps:
     - name: Assign Issues and PR
       uses: srggrs/assign-one-project-github-action@1.2.1
