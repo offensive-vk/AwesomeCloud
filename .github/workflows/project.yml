@@ -13,16 +13,13 @@ on:
     types:
       - opened
       - synchronize
-      - closed
   workflow_dispatch:
 jobs:
   add-to-project:
     name: Add To Project
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/add-to-project@v1
+      - uses: actions/add-to-project@RELEASE_VERSION
         with:
           project-url: https://github.com/users/offensive-vk/projects/6
           github-token: ${{ secrets.BOT_TOKEN }}
-          labeled: 
-          label-operator: OR
