@@ -8,13 +8,13 @@ on:
   issue_comment:
     types: [created]
   workflow_dispatch:
-
+env:
+  GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
+  
 jobs:
   assign_to_project:
     runs-on: ubuntu-latest
     name: Assign to One Project
-    env:
-      GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
     steps:
     - name: Assign Issues and PR
       uses: srggrs/assign-one-project-github-action@1.2.1
