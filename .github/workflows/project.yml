@@ -1,25 +1,21 @@
-name: Auto Assign to Project
+name: Auto-Add to Project
 
 on:
-  issue_comment:
-    types:
-      - created
   issues:
-    types:
-      - opened
-      - labeled
-      - closed
+    types: [opened, edited]
   pull_request:
-    types:
-      - opened
-      - synchronize
-  workflow_dispatch:
+    types: [opened, edited]
+
 jobs:
-  add-to-project:
-    name: Add To Project
+  add_to_project:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/add-to-project@1.0.2
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Add issue/PR to project
+        uses: actions/add-to-project@v1
         with:
-          project-url: https://github.com/users/offensive-vk/projects/6
-          github-token: ${{ secrets.BOT_TOKEN }}
+          project-url: 'https://github.com/users/offensive-vk/projects/6'
+          token: ${{ secrets.BOT_TOKEN }}
+          issue-number: ${{ github.event.issue.number || github.event.pull_request.number }}
