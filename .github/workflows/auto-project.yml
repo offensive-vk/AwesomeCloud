@@ -21,6 +21,7 @@ jobs:
       if: github.event.action == 'opened'
       with:
         project: 'https://github.com/users/offensive-vk/projects/6'
+        column_name: 'In Progress'
     - name: Assign Labeled Bugs.
       uses: srggrs/assign-one-project-github-action@1.2.1
       with:
