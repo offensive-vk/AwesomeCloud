@@ -1,4 +1,4 @@
-name: Auto-Add to Project
+name: CI / Auto Add to Project
 
 on:
   issues:
