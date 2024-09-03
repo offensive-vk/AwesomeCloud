@@ -19,7 +19,7 @@ jobs:
       - name: Setup pnpm@v9
         uses: pnpm/action-setup@v4
         with:
-          version: 9.9.9
+          version: 9
 
       - name: Install & Upgrade Dependencies
         run: |
@@ -56,7 +56,6 @@ jobs:
             - Workflow Path: ${{ github.workflow_ref }}
             - Pull Request Number: #${{ github.event.number }}
             - Pull Request Title: ${{ github.event.pull_request.title }}
-            - Issue Details: ${{ github.event.issue.id }} - ${{ github.event.issue.number }} 
             - Current Action Status: ${{ github.action_status }}
 
             **Please Review the Changes and Merge the PR if everything is fine.**
