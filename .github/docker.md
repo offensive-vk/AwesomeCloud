@@ -260,7 +260,7 @@ Use These Commands at your own risk.
 ## Author Regards 🧑‍💻
 
 - Best Regards from The [Author](https://github.com/offensive-vk) to learn something new.
-- Keep Learning and One Day you'll become a better version for yourself.
+- Keep Learning because *one day you'll become a better version of yourself*.
 - Learn to Shape, not to adapt.
 
 > Thank you, specially for reading this last message at the end of this file.
@@ -270,6 +270,6 @@ Use These Commands at your own risk.
 <p align="center">
   <i>&copy; <a href="https://github.com/offensive-vk/">Vedansh </a> 2023 - Present</i><br>
   <i>Licensed under <a href="https://github.com/offensive-vk/AwesomeCloud#CC0-1.0-1-ov-file">CC0-1.0</a></i><br>
-  <a href="https://github.com/npm-run-test"><img src="https://i.ibb.co/4KtpYxb/octocat-clean-mini.png" /></a><br>
+  <a href="https://github.com/TheHamsterBot"><img src="https://i.ibb.co/4KtpYxb/octocat-clean-mini.png" /></a><br>
   <kbd>Thanks for visiting :)</kbd>
 </p>
