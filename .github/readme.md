@@ -54,6 +54,6 @@ For Any Information About Contribution and Documentation of This Repository.
 <p align="center">
   <i>&copy; <a href="https://github.com/offensive-vk/">Vedansh </a> 2023 - Present</i><br>
   <i>Licensed under <a href="https://github.com/offensive-vk/AwesomeCloud#CC0-1.0-1-ov-file">CC0-1.0</a></i><br>
-  <a href="https://github.com/npm-run-test"><img src="https://i.ibb.co/4KtpYxb/octocat-clean-mini.png" /></a><br>
+  <a href="https://github.com/TheHamsterBot"><img src="https://i.ibb.co/4KtpYxb/octocat-clean-mini.png" /></a><br>
   <kbd>Thanks for visiting :)</kbd>
 </p>
