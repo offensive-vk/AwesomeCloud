@@ -1,26 +1,26 @@
-name: CD / Docker - Publish Image
+name: CD / Docker
 
 on:
   schedule:
-    - cron: '10 0 * * 0'
-  push:
-    branches: [ "master" ]
+    - cron: '0 0 * * 0'
   workflow_dispatch:
 
 env:
   REGISTRY: docker.io
   IMAGE_NAME: ${{ secrets.DOCKER_USER }}/${{ secrets.DOCKER_IMAGE }}
+  USERNAME: ${{ secrets.DOCKER_USER }}
+  PASSWORD: ${{ secrets.DOCKER_TOKEN }}
 
 jobs:
-  docker:
+  docker_publish:
     runs-on: ubuntu-latest
+    name: Publish Image
     permissions:
       contents: read
       packages: write
       id-token: write
-
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Install cosign
@@ -37,8 +37,8 @@ jobs:
         uses: docker/login-action@343f7c4344506bcbf9b4de18042ae17996df046d # v3.0.0
         with:
           registry: ${{ env.REGISTRY }}
-          username: ${{ secrets.DOCKER_USER }}
-          password: ${{ secrets.DOCKER_TOKEN }}
+          username: ${{ env.USERNAME }}
+          password: ${{ env.PASSWORD }}
 
       - name: Extract Docker metadata
         id: meta
@@ -63,3 +63,10 @@ jobs:
           TAGS: ${{ steps.meta.outputs.tags }}
           DIGEST: ${{ steps.build-and-push.outputs.digest }}
         run: echo "Image with ${TAGS} tag has been sucessfully Signed."
+
+      - name: Verify Tags and Labels
+        run: |
+          echo "## Github Action Summary - Docker CI " >> $GITHUB_STEP_SUMMARY
+          echo "${{ steps.meta.outputs.tags }}" >> $GITHUB_STEP_SUMMARY
+          echo "${{ steps.meta.outputs.labels }} " >> $GITHUB_STEP_SUMMARY
+          echo "*** VERIFICATION COMPLETED ***"
