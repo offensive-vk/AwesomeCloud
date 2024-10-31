@@ -24,7 +24,7 @@ jobs:
       - name: Install & Upgrade Dependencies
         run: |
           pnpm install
-          npm run upgrade
+          pnpm run build
           pnpm install --lockfile-only
 
       - name: Create Pull Request
