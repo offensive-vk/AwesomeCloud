@@ -2,9 +2,9 @@ name: CI / Auto Add to Project
 
 on:
   issues:
-    types: [opened, edited, closed]
+    types: [opened, edited]
   pull_request:
-    types: [opened, edited, synchronize]
+    types: [opened, synchronize]
   workflow_dispatch:
 jobs:
   add_to_project:
